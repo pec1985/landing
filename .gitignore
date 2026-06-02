@@ -7,6 +7,9 @@
 
 # local source photos are served from ImageKit in production
 /public/photos/*.png
+
+# local Kubernetes deployment manifests
+/k8s/
 .yarn/*
 !.yarn/patches
 !.yarn/plugins

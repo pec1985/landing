@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.*
+
+# local source photos are served from ImageKit in production
+/public/photos/*.png
 .yarn/*
 !.yarn/patches
 !.yarn/plugins

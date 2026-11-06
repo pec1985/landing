@@ -2,13 +2,14 @@ import Image from "next/image";
 
 const profile = {
   name: "Pedro Enrique",
-  title: "Senior Software Engineer",
+  title: "Founder of Orbitali · Senior Software Engineer",
   focus: "Mobile - Full-stack - Infrastructure",
   location: "Spain",
   email: "pedro.tma@gmail.com",
   linkedin: "https://linkedin.com/in/pec1985",
   github: "https://github.com/pec1985",
   resumeUrl: "/resume.pdf",
+  orbitaliUrl: "https://orbitali.ai",
   volandooUrl: "https://volandoo.com",
   fluxionDbUrl: "https://fluxiondb.com",
   tagline:
@@ -16,8 +17,7 @@ const profile = {
 };
 
 const images = {
-  portrait:
-    "https://ik.imagekit.io/tcixzkbxb/personal/pedro-portrait.png?tr=f-auto,q-auto,w-900",
+  portrait: "/photos/pedro-enrique.png",
   hangGliding:
     "https://ik.imagekit.io/tcixzkbxb/personal/pedro-hang-gliding.png?tr=f-auto,q-auto,w-1200",
   family:
@@ -26,6 +26,7 @@ const images = {
 
 const navItems = [
   { label: "About", href: "#about" },
+  { label: "Orbitali", href: "#orbitali" },
   { label: "Volandoo", href: "#volandoo" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
@@ -72,6 +73,20 @@ const volandooStack = [
 ];
 
 const experienceItems = [
+  {
+    company: "Orbitali",
+    role: "Founder and CEO/CTO",
+    dates: "Present",
+    description:
+      "Leading company direction, product, and engineering at Orbitali, a platform for building and operating real-time AI voice agents. Owning the architecture and delivery across the voice runtime, APIs, developer dashboard, and infrastructure.",
+    highlights: [
+      "Real-time voice orchestration",
+      "Phone and browser voice agents",
+      "Custom tools and knowledge retrieval",
+      "Public API and MCP integrations",
+      "Call transcripts and observability",
+    ],
+  },
   {
     company: "Agentuity",
     role: "Senior Full Stack Engineer",
@@ -394,10 +409,11 @@ function HeroSection() {
           {profile.focus}
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight font-semibold text-stone-950 sm:text-5xl lg:text-6xl">
-          Senior engineer building mobile apps, full-stack products, and
-          infrastructure.
+          Founder of Orbitali. Engineer building AI, mobile, and full-stack
+          products.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-700 sm:text-xl">
+          I&apos;m building Orbitali, a platform for real-time AI voice agents.
           I&apos;ve been building software in Silicon Valley startup
           environments since 2010, from native mobile SDKs and iOS apps to
           backend systems, frontend applications, Kubernetes infrastructure,
@@ -407,7 +423,10 @@ function HeroSection() {
           Based in Spain. Working remotely with international and US teams.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <ArrowLink href="#experience">View experience</ArrowLink>
+          <ArrowLink href="#orbitali">Explore Orbitali</ArrowLink>
+          <ArrowLink href="#experience" variant="outline">
+            View experience
+          </ArrowLink>
           <ArrowLink href="#volandoo" variant="outline">
             See Volandoo
           </ArrowLink>
@@ -422,8 +441,8 @@ function HeroSection() {
           <Image
             src={images.portrait}
             alt="Pedro Enrique"
-            width={900}
-            height={1125}
+            width={2048}
+            height={2048}
             priority
             className="h-full w-full object-cover object-top"
           />
@@ -474,7 +493,8 @@ function AboutSection() {
         <SectionHeading eyebrow="About" title="About Pedro" />
         <div className="space-y-6 text-lg leading-8 text-stone-700">
           <p>
-            Pedro Enrique is a senior software engineer with deep experience
+            Pedro Enrique is the founder and CEO/CTO of Orbitali and a senior
+            software engineer with deep experience
             across native mobile, backend systems, frontend applications,
             infrastructure, and product development. He started working in
             Silicon Valley startup environments in 2010 and has since
@@ -489,6 +509,66 @@ function AboutSection() {
             real-time systems, not as a collection of buzzwords, but as tools
             used to ship real products.
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OrbitaliSection() {
+  return (
+    <section id="orbitali" className="border-t border-stone-200 bg-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
+          <SectionHeading
+            eyebrow="Founder and CEO/CTO"
+            title="Orbitali: real-time AI voice agents"
+            subtitle="A platform for developers and teams to build and operate AI voice agents on phone numbers and in the browser."
+          />
+          <p className="mt-6 text-lg leading-8 text-stone-700">
+            I founded Orbitali to make voice agents practical to build and run.
+            I lead product, technology, and engineering, from the real-time
+            conversation runtime to the APIs, dashboard, and infrastructure.
+          </p>
+          <p className="mt-5 text-base leading-7 text-stone-600">
+            Orbitali manages audio, turn-taking, and conversation orchestration.
+            Teams connect their own phone carrier, bring their knowledge, and
+            link agents to their applications through tools and APIs.
+          </p>
+          <div className="mt-8">
+            <ArrowLink href={profile.orbitaliUrl}>Visit Orbitali</ArrowLink>
+          </div>
+        </div>
+        <div className="grid content-start gap-4">
+          {[
+            {
+              title: "Conversations across phone and web",
+              description:
+                "Real-time voice with natural interruptions, browser sessions, and Twilio or Telnyx carrier connections.",
+            },
+            {
+              title: "Connected to business workflows",
+              description:
+                "Custom tools, knowledge retrieval, a public REST API, and MCP integrations connect agents to the systems teams already use.",
+            },
+            {
+              title: "Built to operate",
+              description:
+                "A developer dashboard brings agent configuration, call records, transcripts, logs, and usage into one place.",
+            },
+          ].map((feature) => (
+            <article
+              key={feature.title}
+              className="rounded-3xl border border-stone-200 bg-[#f7f5f0] p-6"
+            >
+              <h3 className="text-xl font-semibold text-stone-950">
+                {feature.title}
+              </h3>
+              <p className="mt-3 text-base leading-7 text-stone-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -814,6 +894,7 @@ export default function Home() {
       <HeroSection />
       <CredibilityStrip />
       <AboutSection />
+      <OrbitaliSection />
       <VolandooSection />
       <ExperienceTimeline />
       <SkillsSection />

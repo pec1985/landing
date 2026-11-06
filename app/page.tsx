@@ -17,8 +17,7 @@ const profile = {
 };
 
 const images = {
-  portrait:
-    "https://ik.imagekit.io/tcixzkbxb/personal/pedro-portrait.png?tr=f-auto,q-auto,w-900",
+  portrait: "/photos/pedro-enrique.png",
   hangGliding:
     "https://ik.imagekit.io/tcixzkbxb/personal/pedro-hang-gliding.png?tr=f-auto,q-auto,w-1200",
   family:
@@ -442,8 +441,8 @@ function HeroSection() {
           <Image
             src={images.portrait}
             alt="Pedro Enrique"
-            width={900}
-            height={1125}
+            width={2048}
+            height={2048}
             priority
             className="h-full w-full object-cover object-top"
           />

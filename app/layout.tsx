@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pedro Enrique - Senior Software Engineer",
+  title: "Pedro Enrique - Founder of Orbitali & Software Engineer",
   description:
-    "Pedro Enrique is a senior software engineer with 15+ years of experience across mobile apps, full-stack product engineering, infrastructure, AI systems, and startup product development. Founder of Volandoo, serving 18,000+ users worldwide.",
+    "Pedro Enrique is a senior software engineer with 15+ years of experience across mobile apps, full-stack product engineering, infrastructure, AI systems, and startup product development. Founder and CEO/CTO of Orbitali, a real-time AI voice agent platform, and founder of Volandoo, serving 18,000+ users worldwide.",
   openGraph: {
-    title: "Pedro Enrique - Mobile, Full-Stack, Infrastructure",
+    title: "Pedro Enrique - Founder of Orbitali & Software Engineer",
     description:
-      "Building mobile apps, full-stack systems, infrastructure, and real-world products since 2010.",
+      "Founder and CEO/CTO of Orbitali. Building real-time AI voice agents, mobile apps, full-stack systems, and infrastructure.",
     type: "website",
   },
 };

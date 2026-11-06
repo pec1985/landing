@@ -421,7 +421,7 @@ function HeroSection() {
           real-time platforms, and AI agent tooling.
         </p>
         <p className="mt-4 text-base font-medium text-stone-800">
-          Based in Spain. Building Orbitali for teams around the world.
+          Based in Spain. Building Orbitali for businesses around the world.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <ArrowLink href="#orbitali">Explore Orbitali</ArrowLink>
@@ -524,16 +524,16 @@ function OrbitaliSection() {
           <SectionHeading
             eyebrow="Founder and CEO/CTO"
             title="Orbitali: real-time AI voice agents"
-            subtitle="A platform for developers and teams to build and operate AI voice agents on phone numbers and in the browser."
+            subtitle="A platform that helps businesses build and operate AI voice agents on phone numbers and in the browser."
           />
           <p className="mt-6 text-lg leading-8 text-stone-700">
-            I founded Orbitali to make voice agents practical to build and run.
+            I founded Orbitali to help businesses build and run voice agents.
             I lead product, technology, and engineering, from the real-time
             conversation runtime to the APIs, dashboard, and infrastructure.
           </p>
           <p className="mt-5 text-base leading-7 text-stone-600">
             Orbitali manages audio, turn-taking, and conversation orchestration.
-            Teams connect their own phone carrier, bring their knowledge, and
+            Businesses connect their own phone carrier, bring their knowledge, and
             link agents to their applications through tools and APIs.
           </p>
           <div className="mt-8">
@@ -550,7 +550,7 @@ function OrbitaliSection() {
             {
               title: "Connected to business workflows",
               description:
-                "Custom tools, knowledge retrieval, a public REST API, and MCP integrations connect agents to the systems teams already use.",
+                "Custom tools, knowledge retrieval, a public REST API, and MCP integrations connect agents to the systems businesses already use.",
             },
             {
               title: "Built to operate",
@@ -850,13 +850,13 @@ function ContactSection() {
               Help grow Orbitali
             </h2>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-emerald-50">
-              I&apos;m building Orbitali to help teams bring AI voice agents
-              into everyday business workflows. If you&apos;re an investor or
+              I&apos;m building Orbitali to help businesses build voice agents
+              for their everyday workflows. If you&apos;re an investor or
               partner who shares that vision, I&apos;d love to connect.
             </p>
             <p className="mt-5 text-base font-semibold text-white">
               Capital, introductions to customers, strategic partnerships, and
-              experience scaling developer platforms can help Orbitali grow.
+              experience scaling business software can help Orbitali grow.
             </p>
           </div>
           <div className="grid content-start gap-3 sm:grid-cols-2">

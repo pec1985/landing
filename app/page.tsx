@@ -16,7 +16,7 @@ const profile = {
 };
 
 const images = {
-  portrait: "/photos/pedro-enrique.png",
+  portrait: "/photos/pedro-enrique.webp",
   hangGliding:
     "https://ik.imagekit.io/tcixzkbxb/personal/pedro-hang-gliding.png?tr=f-auto,q-auto,w-1200",
   family:
@@ -438,12 +438,13 @@ function HeroSection() {
       </div>
 
       <div className="mx-auto w-full max-w-md lg:max-w-[430px]">
-        <div className="aspect-[4/4.6] overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-200 shadow-2xl shadow-stone-300/40">
+        <div className="aspect-[1459/1945] overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-200 shadow-2xl shadow-stone-300/40">
           <Image
             src={images.portrait}
             alt="Pedro Enrique"
-            width={2048}
-            height={2048}
+            width={1459}
+            height={1945}
+            sizes="(min-width: 1024px) 430px, (min-width: 488px) 448px, calc(100vw - 40px)"
             priority
             className="h-full w-full object-cover object-top"
           />
